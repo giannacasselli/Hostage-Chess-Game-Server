@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title> Upload Stringboard </title>
+  </head>
+  <body>
+    <!-- had to add enctype for file reading to work-->
+    <form action="board.html" method="post" enctype="multipart/form-data">
+      <label for="filename">Board File</label>
+      <input type="file" id="board" name="stringboard">
+
+      <br><br><label for="turn">Turn:</label>
+      <select id="turn" name="turn" required><br><br>
+        <option value="w">White</option>
+        <option value="b">Black</option>
+      </select>
+      <br><br><label for="wtime">White Time:</label>
+      <input type="number" id="wtime" name="wtime" required> s<br><br>
+
+      <label for="btime">Black Time:</label>
+      <input type="number" id="btime" name="btime" required> s<br><br>
+
+      <input type="submit"><br><br>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+    <title> Welcome! </title>
+</head>
+<style>
+    body {
+        background-image: url("wizard.jpg"); 
+        background-size: cover;
+        color: rgb(160, 152, 173); 
+        font-family: 'Cinzel', serif; 
+    }
+</style>
+<body>
+    <h1>Welcome to Hostage Chess!</h1>
+    <audio id="music" autoplay loop>
+        <source src="Hedwig.mp3" type="audio/mpeg">
+    </audio>
+    <form action="/login.html" method="post" enctype="multipart/form-data">
+        <label for="handle">Username/Handle</label>
+        <input type="text" id="handle" name="handle" required>
+        <br><br><input type="submit">
+    </form>
+</body>
+</html>
+
+<!-- <!doctype html>
+<html>
+
+<head>
+    <title>test</title>
+    <link rel="stylesheet" href="css/chessboard-1.0.0.css">
+    <style>
+        body {
+            background-image: url("wizard.jpg"); 
+            background-size: cover;
+            color: rgb(160, 152, 173); 
+            font-family: 'Cinzel', serif; 
+        }
+        #boardContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 400px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <h1>Wizard Hostage Chess!</h1>
+    <div id="boardContainer">
+        <div id="myBoard" style="width: 800px"></div>
+    </div>
+    <audio id="music" autoplay loop>
+        <source src="Hedwig.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/chessboard-1.0.0.js"></script>
+    <script>
+        console.log("JavaScript is running!");
+        var config = {
+            draggable: true,
+            dropOffBoard: 'snapback', // this is the default
+            position: 'start'
+        }
+        var board = Chessboard('myBoard', config)
+    </script>
+</body>
+
+</html> -->
